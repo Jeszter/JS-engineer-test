@@ -66,6 +66,10 @@ quiz-builder/
     └── public/
 ```
 
+<img width="2559" height="1402" alt="изображение" src="https://github.com/user-attachments/assets/9fcc2628-4994-444c-86a6-70ee200c51bc" />
+
+<img width="2559" height="1400" alt="изображение" src="https://github.com/user-attachments/assets/476a14b1-0699-487a-9a04-012d900db53d" />
+
 ## 📌 API Endpoints
 
 - `POST /api/quizzes` - create quiz
