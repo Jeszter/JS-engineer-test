@@ -1,0 +1,151 @@
+﻿@import "tailwindcss";
+
+@layer base {
+    body {
+        background: linear-gradient(135deg, #CABEA9 0%, #DDC5B1 50%, #C7B5A7 100%);
+        min-height: 100vh;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        background: #605550;
+        color: #DDC5B1;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.75rem;
+        font-weight: 500;
+        font-size: 1.125rem;
+        box-shadow: 0 4px 6px -3px rgba(149, 134, 123, 0.3);
+        transition: all 0.3s;
+        border: 1px solid #95867B;
+    }
+    .btn-primary:hover {
+        background: #95867B;
+        color: #605550;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(149, 134, 123, 0.4);
+    }
+
+    .btn-secondary {
+        background: transparent;
+        color: #605550;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.75rem;
+        font-weight: 500;
+        font-size: 1.125rem;
+        border: 1px solid #95867B;
+        backdrop-filter: blur(4px);
+        transition: all 0.3s;
+    }
+    .btn-secondary:hover {
+        background: rgba(221, 197, 177, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(149, 134, 123, 0.3);
+    }
+
+    .btn-danger {
+        background: #95867B;
+        color: #DDC5B1;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        transition: all 0.3s;
+        border: 1px solid #605550;
+    }
+    .btn-danger:hover {
+        background: #605550;
+        color: #CABEA9;
+    }
+
+    .card {
+        background: rgba(221, 197, 177, 0.25);
+        backdrop-filter: blur(8px);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 20px 25px -5px rgba(96, 85, 80, 0.2);
+        border: 1px solid rgba(149, 134, 123, 0.3);
+        transition: all 0.3s;
+    }
+    .card:hover {
+        box-shadow: 0 25px 50px -12px rgba(96, 85, 80, 0.3);
+        transform: translateY(-4px);
+        border-color: #95867B;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid #95867B;
+        border-radius: 0.75rem;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(4px);
+        transition: all 0.3s;
+        color: #605550;
+    }
+    .input-field::placeholder {
+        color: #95867B;
+        opacity: 0.7;
+    }
+    .input-field:focus {
+        outline: none;
+        border-color: #605550;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 0 0 2px rgba(149, 134, 123, 0.2);
+    }
+
+    .nav-link {
+        color: #605550;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s;
+        font-weight: 500;
+    }
+    .nav-link:hover {
+        color: #DDC5B1;
+        background: #605550;
+    }
+
+    .gradient-text {
+        background: linear-gradient(135deg, #605550 0%, #95867B 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+    }
+
+    .quiz-stats {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: #605550;
+        background: rgba(221, 197, 177, 0.4);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        border: 1px solid rgba(149, 134, 123, 0.3);
+    }
+
+    select.input-field {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20' stroke='%23605550'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+        background-position: right 0.75rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-right: 2.5rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
